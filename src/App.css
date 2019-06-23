@@ -1,33 +1,44 @@
-.App {
+h2{
   text-align: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  animation: todo 1s infinite;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.num{
+  text-align: center; 
+  margin-top: 0px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.inst{
+  margin-top: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.time{
+  float: right;
+  font-size: 14px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text{
+  padding-right: 5px;
+  padding-top: 10px;
+}
+.bar{
+  animation: fromtop 5s;
+}
+.data{
+  animation:comeup 1s;
+}
+.options{
+  margin-top:34px;
+}
+@keyframes todo{
+  0%{color: red;}
+  20%{color: blue;}
+  50%{color: green;}
+  80%{color: greenyellow;}
+  100%{color: gray}
+}
+@keyframes comeup{
+  from{transform: scale(0)}
+  to{transform: scale(1)}
+}
+@keyframes closeit{
+  from{transform: scale(1)}
+  to{transform: scale(0)}
 }
